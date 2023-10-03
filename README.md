@@ -6,7 +6,10 @@ you want to display the result.
 
 ## Installation
 
-Download the zip file, extract it, and import it into Android Studio. After the successful gradle sync. Run the project.
+Download the zip file, extract it, and import it into Android Studio. After the successful gradle sync. Run the project. 
+OR
+Run the assignment-debug.apk file in your phone.
+
 
 ## Solution
 

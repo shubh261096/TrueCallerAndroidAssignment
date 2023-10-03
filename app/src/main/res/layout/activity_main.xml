@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Fetch Content Button -->
+            <Button
+                android:id="@+id/fetchContentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Fetch Content"
+                app:layout_constraintBottom_toTopOf="@id/contentTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Content Display -->
+            <TextView
+                android:id="@+id/contentTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@id/task1TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fetchContentButton" />
+
+            <!-- Task 1 -->
+            <TextView
+                android:id="@+id/task1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contentTextView"
+                android:layout_marginTop="32dp"
+                android:text="15th Character:"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/task1ResultTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contentTextView" />
+
+            <TextView
+                android:id="@+id/task1ResultTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task1TextView"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@id/task2TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/task1TextView" />
+
+            <!-- Task 2  -->
+            <TextView
+                android:id="@+id/task2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task1ResultTextView"
+                android:layout_marginTop="16dp"
+                android:text="Every 15th Character:"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/task2ResultTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/task1ResultTextView" />
+
+            <TextView
+                android:id="@+id/task2ResultTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task2TextView"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@id/task3TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/task2TextView" />
+
+            <!-- Task 3 -->
+            <TextView
+                android:id="@+id/task3TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task2ResultTextView"
+                android:layout_marginTop="16dp"
+                android:text="Word Counts:"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/task3ResultTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/task2ResultTextView" />
+
+            <TextView
+                android:id="@+id/task3ResultTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task3TextView"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/task3TextView" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
